@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portofolio-v2-/', // Sesuaikan dengan nama repositori GitHub Anda
+  base: '/portofolio-v2-/',
 })
     server: {
       host: '0.0.0.0',
