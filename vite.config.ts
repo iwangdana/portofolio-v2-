@@ -2,18 +2,13 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-export default defineConfig(() => {
-  return {
-    plugins: [react(), tailwindcss()],
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, '.'),
-      },
-    },
+export default defineConfig({
+  plugins: [react()],
+  base: '/portofolio-v2-/', // Sesuaikan dengan nama repositori GitHub Anda
+})
     server: {
       host: '0.0.0.0',
       port: 3000,
